@@ -1,19 +1,5 @@
-<!DOCTYPE html>
 {% extends 'base.html' %}
 {% load static %}
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link to css -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <!--  Box Icone -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-    <title>Post Page </title>
-</head>
-<body>
 
     {% block content %}
     <!-- Post Content -->
@@ -24,7 +10,7 @@
             <!-- Tilte -->
             <h1 class="header-title">How To Create UX Designe With Abobe XD</h1>
             <!-- Post Image -->
-            <img src="{% static 'img/post-1.jpg' %}" alt="" class="header-img">
+            <img src="{% static 'images/post-1.jpg' %}" alt="" class="header-img">
         </div>
     </section>
 
@@ -50,20 +36,3 @@
         </div>
     </div>
     {% endblock content %}
-
-<!-- Footer -->
-    <div class="footer container">
-        <p>&#169; Carpoolvenom All Right Reseved</p>
-        <div class="social">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-        </div>
-    </div>
-
-    <!-- JQuery Link -->
-    <script src="{% static 'https://code.jquery.com/jquery-3.6.0.js' %}" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="{% static 'js/scripts.js' %}"></script>
-</body>
-</html>

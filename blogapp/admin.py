@@ -10,3 +10,4 @@ class AdminBlogPost(admin.ModelAdmin):
     list_display = ('author', 'title', 'created_on', 'published', 'last_updated')
     search_fields = ('title', 'content')
     list_filter = ('author', 'title')
+    prepopulated_fields = {'slug': ('title',), }
