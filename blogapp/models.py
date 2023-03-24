@@ -22,4 +22,3 @@ class BlogPost(models.Model):
     class Meta:
         ordering = ['-created_on']
         verbose_name = "Article"
-

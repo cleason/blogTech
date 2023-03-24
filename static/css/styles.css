@@ -10,17 +10,12 @@
     box-sizing: border-box;
 }
 
-/* body {
-    background: #D9E5D6;
-} */
-
 /* Variable */
-
 :root {
     --container-color: #1a1e21;
     --second-color: #FF4000;
     --text-color: #172317;
-    --bg-color: #fff;
+    --bg-color: #aaaaaa;
 }
 
 ::selection {
