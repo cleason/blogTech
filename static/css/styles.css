@@ -15,7 +15,7 @@
     --container-color: #1a1e21;
     --second-color: #FF4000;
     --text-color: #172317;
-    --bg-color: #aaaaaa;
+    --bg-color: #ffffff;
 }
 
 ::selection {
@@ -69,6 +69,18 @@ header.shadow .logo {
     align-items: center;
     justify-content: space-between;
     padding: 18px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    
+    width: 60px;
+    color: var(--bg-color);
 }
 
 .logo {
