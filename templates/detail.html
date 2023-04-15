@@ -2,13 +2,16 @@
 {% load static %}
 
     {% block content %}
+    {% for post in posts %}
     <!-- Post Content -->
     <section class="post-header">
         <div class="header-content post-container">
             <!-- Back To Home -->
             <a href="index.html" class="back-home">Back To Home</a>
+            <br>
             <!-- Tilte -->
-            <h1 class="header-title">How To Create UX Designe With Abobe XD</h1>
+            <h1 class="header-title"> {{ post.title }} </h1>
+            <br>
             <!-- Post Image -->
             <img src="{% static 'images/post-1.jpg' %}" alt="" class="header-img">
         </div>
@@ -16,14 +19,10 @@
 
 <!-- Post -->
     <section class="post-content post-container">
-        <h2 class="sub-heading">Create Best UX Design</h2>
-        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel omnis quidem quasi libero ipsam voluptates sunt sed, ducimus rem, architecto tenetur, magni aliquid aspernatur excepturi accusamus totam reprehenderit? Deleniti deserunt temporibus pariatur ea nihil labore, voluptas provident aliquam numquam? Esse, velit at! Accusantium, magni ea.</p>
-        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel omnis quidem quasi libero ipsam voluptates sunt sed, ducimus rem, architecto tenetur, magni aliquid aspernatur excepturi accusamus totam reprehenderit? Deleniti deserunt temporibus pariatur ea nihil labore, voluptas provident aliquam numquam? Esse, velit at! Accusantium, magni ea.</p>
-        <h2 class="sub-heading">Create Best UX Design</h2>
-        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel omnis quidem quasi libero ipsam voluptates sunt sed, ducimus rem, architecto tenetur, magni aliquid aspernatur excepturi accusamus totam reprehenderit? Deleniti deserunt temporibus pariatur ea nihil labore, voluptas provident aliquam numquam? Esse, velit at! Accusantium, magni ea.</p>
-        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel omnis quidem quasi libero ipsam voluptates sunt sed, ducimus rem, architecto tenetur, magni aliquid aspernatur excepturi accusamus totam reprehenderit? Deleniti deserunt temporibus pariatur ea nihil labore, voluptas provident aliquam numquam? Esse, velit at! Accusantium, magni ea.</p>
-        <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel omnis quidem quasi libero ipsam voluptates sunt sed, ducimus rem, architecto tenetur, magni aliquid aspernatur excepturi accusamus totam reprehenderit? Deleniti deserunt temporibus pariatur ea nihil labore, voluptas provident aliquam numquam? Esse, velit at! Accusantium, magni ea.</p>
+        <!-- <h2 class="sub-heading">{{ post.title }}</h2> -->
+        <p class="post-text">{{ post.content|safe }}</p>
     </section>
+    {% endfor %}
 
 <!-- Share -->
     <div class="share post-container">
