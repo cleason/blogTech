@@ -41,12 +41,12 @@
         <div class="post-box mobile">
             <img src="{{ post.images.url }}" alt="" class="post-img">
             <h2 class="category">Design</h2>
-            <a href="post-page.html" class="post-title">{{ post.title }}</a>
+            <a href="{%url 'blogapp:detail' slug=post.slug %}" class="post-title">{{ post.title }}</a>
             <span class="post-date"> {{ post.created_on }} </span>
             <p class="post-description">{{ post.content|truncatewords:20|safe }}</p>
             <!-- Profile -->
             <div class="profile">
-                <img src="{% static 'images/profile-1.jpg' %}" alt="" class="profile-img">
+                <img src="{% static 'images/clea.jpg' %}" alt="" class="profile-img">
                 <span class="profile-name">{{ post.author }}</span>
             </div>
         </div>
